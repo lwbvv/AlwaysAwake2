@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/map_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<TextView-->
+    <!--android:id="@+id/map_search"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="위치 선택"-->
+    <!--/>-->
+    <!--<fragment-->
+    <!--android:id="@+id/map_map"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--class = "com.google.android.gms.maps.MapFragment"-->
+    <!--/>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/currentLocation_map"
+            tools:context=".ActivityMapCrrentLocation"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+        <TextView
+            android:id="@+id/currentLocation_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="반경 설정"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+    </FrameLayout>
+    <!--<fragment-->
+    <!--android:id="@+id/map_map"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--class="com.google.android.gms.maps.MapFragment" />-->
+
+
+</LinearLayout>
+

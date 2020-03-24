@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alwaysawake2">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.alwaysawake2"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value= "@string/googleKey" />
+        <!-- google service -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <!--알람 리시버-->
+        <receiver android:name=".NotificationClass.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+
+        <!--알람 서비스-->
+        <service android:name=".NotificationClass.AlarmService"></service>
+
+        <!--인트로-->
+        <activity android:name=".ActivityAIntro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--로그인-->
+        <activity android:name=".ActivityBLogin"></activity>
+
+
+        <!--회원가입-->
+        <activity android:name=".ActivityCSignUp"></activity>
+
+        <!--메인-->
+        <activity android:name=".ActivityDMain"></activity>
+
+        <!--취미-->
+        <activity android:name=".ActivityE1Habit"></activity>
+
+        <!--취미 생성-->
+        <activity android:name=".ActivityE2HabitCreating"></activity>
+
+        <!--좋은 글귀-->
+        <activity android:name=".ActivityF1GoodWriting"></activity>
+
+        <!--글귀 생성창-->
+        <activity android:name=".ActivityF2Writing"></activity>
+
+        <!--프로젝트-->
+        <activity android:name=".ActivityG1Project"></activity>
+
+        <!--프로젝트 타이틀 마감일 선택창-->
+        <activity android:name=".ActivityG2Title"></activity>
+
+        <!--프로젝트 계획창-->
+        <activity android:name=".ActivityG3Plan"></activity>
+
+        <!--계획 생성창-->
+        <activity android:name=".ActivityG4AddPlan"></activity>
+
+        <!--첨부할 사진 선택창-->
+        <activity
+            android:name=".ActivityG5Picture"
+            android:configChanges="keyboardHidden|orientation"></activity>
+
+        <!--좋아요 누른 글귀 표시-->
+        <activity android:name=".ActivityH1Like"></activity>
+
+        <!--스탑워치-->
+        <activity android:name=".ActivityStopWatch"></activity>
+
+        <!--타이머-->
+        <activity android:name=".ActivityTimer"></activity>
+
+        <!--구글맵-->
+        <activity android:name=".ActivityE3Map"></activity>
+
+        <!--코멘트 액티비티-->
+        <activity android:name=".ActivityComment"></activity>
+
+        <!--습관 상세보기 창-->
+        <activity android:name=".ActivityHabitDetailed"></activity>
+
+        <!--현재 위치 표시-->
+        <activity android:name="ActivityMapCrrentLocation"></activity>
+
+        <service
+            android:name=".NotificationClass.ProjectService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+    </application>
+
+</manifest>

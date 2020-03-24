@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--뒤로가기 버튼 (습관창으로 이동)-->
+        <Button
+            android:id="@+id/habitCreating_backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:background="@drawable/ic_chevron_left_black_24dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/habitCreating_indexTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="125dp"
+            android:text="새 습관"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <!--확인 버튼 (데이터 들고 습관창으로 이동)-->
+        <Button
+            android:id="@+id/habitCreating_successButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:background="@color/transparentColors"
+            android:text="완료"
+            android:textSize="20dp" />
+    </GridLayout>
+
+    <!--습관 타이틀-->
+    <EditText
+        android:id="@+id/habitCreating_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_impending_textview_background"
+        android:ems="10"
+        android:hint="습관이름"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="수행할 요일" />
+
+    <!--요일 체크박스-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <CheckBox
+            android:id="@+id/habitCreating_monCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="월"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitCreating_tueCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="화"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitCreating_wedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="수"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitCreating_thuCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="목"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitCreating_friCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="금"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitCreating_satCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="토"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitCreating_sunCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="일"
+            android:textColor="@color/basicTextColor" />
+    </LinearLayout>
+
+    <!--매일 체크-->
+    <Button
+        android:id="@+id/habitCreating_everyDayCheckButton"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#EEEEEE"
+        android:text="매일"
+        android:textColor="#4B4B4B"
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="이 시간대에 미리 알림" />
+
+    <TextView
+        android:id="@+id/habitCreating_preNoticeTime"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_impending_textview_background"
+        android:gravity="center"
+        android:text="시간추가"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="이 위치에 있을 때 습관체크 활성화" />
+
+    <TextView
+        android:id="@+id/habitCreating_location"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_impending_textview_background"
+        android:gravity="center"
+        android:text="위치추가"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="이 시간대에 체크박스 활성화" />
+
+    <TextView
+        android:id="@+id/habitCreating_timerStart"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_impending_textview_background"
+        android:gravity="center"
+        android:text="시작시간"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/habitCreating_timerFinish"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_impending_textview_background"
+        android:gravity="center"
+        android:text="제한시간"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp" />
+</LinearLayout>

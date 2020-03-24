@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textColor="@color/loginTitleColor"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="프로필 사진 선택"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/loginTitleColor"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/signUp_profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/intro_awaken" />
+
+    <!--아이디 입력-->
+    <EditText
+        android:id="@+id/signUp_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/text_corner_round"
+        android:hint="아이디"
+        android:padding="5dp"
+        android:textSize="20dp" />
+
+    <!--닉네임 입력-->
+    <EditText
+        android:id="@+id/signUp_nickName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_corner_round"
+        android:hint="닉네임"
+        android:padding="5dp"
+        android:textSize="20dp" />
+
+    <!--패스워드 입력-->
+    <EditText
+        android:id="@+id/signUp_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_corner_round"
+        android:hint="패스워드"
+        android:padding="5dp"
+        android:textSize="20dp" />
+
+    <!--패스워드 확인-->
+    <EditText
+        android:id="@+id/signUp_passwordCheck"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_corner_round"
+        android:hint="패스워드 확인"
+        android:padding="5dp"
+        android:textSize="20dp" />
+
+    <!--확인 버튼-->
+    <Button
+        android:id="@+id/signUp_successButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button_background"
+        android:text="확인" />
+
+    <!--취소 버튼-->
+    <Button
+        android:id="@+id/signUp_cancelButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button_background"
+        android:text="취소" />
+
+</LinearLayout>

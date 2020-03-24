@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:add="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_timer_black_24dp"
+        android:text="STOPWATCH"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.498"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.044" />
+
+    <TextView
+        android:id="@+id/time_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.498"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.255" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="기록"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/basicBackground"
+        android:gravity="center"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.498"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.33" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="328dp"
+        android:scrollbars="vertical"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.0"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.684">
+
+        <TextView
+            android:id="@+id/record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시작"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/stopwatch_button"
+        android:onClick="myOnClick"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintHorizontal_bias="0.2"
+        add:layout_constraintVertical_bias="0.9"
+        />
+
+    <Button
+        android:id="@+id/btn_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기록"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/stopwatch_button"
+        android:onClick="myOnClick"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintHorizontal_bias="0.8"
+        add:layout_constraintVertical_bias="0.9"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+

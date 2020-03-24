@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--로그인 화면 리소스-->
+    <color name="textCornerRoundColors">#FFFFFF</color>
+    <color name="loginButtonBackground">#A0D7FF</color>
+    <color name="transparentColors">#00000000</color>
+    <color name="loginTitleColor">#202020</color>
+    <color name="loginBackground">#FFF1CB</color>
+
+
+
+    <!--메인화면 리소스-->
+    <color name="impendingTextViewBackground">#FFFFFF</color>
+    <color name="mainLine">#A7A7A7</color>
+
+
+
+
+
+    <!--&lt;!&ndash;하단부 아이콘 선택 배경색&ndash;&gt;-->
+    <!--<color name="lowerBackground">#FFFFFF</color>-->
+
+
+
+    <!--기본 배경색-->
+    <color name="basicBackground">#FFF1CB</color>
+
+    <!--기본 텍스트 색상-->
+    <color name="basicTextColor">#000000</color>
+
+    <!--기본 화이트-->
+    <color name="White">#FFFFFF</color>
+
+    <!--댓글 버튼 활성화 컬러-->
+    <color name="onCommentButton">#0690FF</color>
+</resources>

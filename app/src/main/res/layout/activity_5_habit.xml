@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:text="습관"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/all_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="모두보기"
+        android:textSize="15dp"
+        />
+</RelativeLayout>
+        <TextView
+            android:id="@+id/habit_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="요일"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="565dp">
+        <!--습관 리사이클러뷰-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/habit_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/habit_addHabitButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/plus_pink"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            />
+    </FrameLayout>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mainLine"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0"
+        >
+        <!--홈으로 이동-->
+        <Button
+            android:id="@+id/habit_toHomeButton"
+            android:layout_marginLeft="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/home_blank"
+            />
+        <!--프로젝트로 이동-->
+        <Button
+            android:id="@+id/habit_toProjectButton"
+            android:layout_marginLeft="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/everyday"
+            />
+        <!--습관창-->
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/day_click"
+            />
+        <!--좋은글귀로 이동-->
+        <Button
+            android:id="@+id/habit_toGoodWritingButton"
+            android:layout_marginLeft="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/wording"
+            />
+        <!--좋아요 누른 글귀이동-->
+        <Button
+            android:id="@+id/habit_toLikeButton"
+            android:layout_marginLeft="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/heart"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

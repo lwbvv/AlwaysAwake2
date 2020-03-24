@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:add="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/timer_backButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back_arrow"
+        android:scaleType="centerInside"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintEnd_toEndOf="parent"
+        add:layout_constraintHorizontal_bias="0.01"
+        add:layout_constraintStart_toStartOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/hourglass"
+        android:text="TIMER"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.498"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.139" />
+    <TextView
+        android:id="@+id/timer_countDownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#000000"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"
+        />
+
+    <NumberPicker
+        android:id="@+id/timer_hourSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintEnd_toStartOf="@+id/timer_textViewHour"
+        add:layout_constraintHorizontal_bias="0.041"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.5"></NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/timer_minuteSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintEnd_toStartOf="@+id/timer_textViewMinute"
+        add:layout_constraintHorizontal_bias="0.939"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintStart_toStartOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.5"></NumberPicker>
+
+    <NumberPicker
+        android:id="@+id/timer_secondSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintEnd_toStartOf="@+id/timer_textViewSecond"
+        add:layout_constraintHorizontal_bias="0.989"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintStart_toStartOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.5"></NumberPicker>
+
+    <TextView
+        android:id="@+id/timer_textViewHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.3"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_textViewMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="분"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.62"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer_textViewSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.9"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/timer_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stopwatch_button"
+        android:text="시작"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.179"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.869" />
+
+    <Button
+        android:id="@+id/timer_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stopwatch_button"
+        android:text="리셋"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        add:layout_constraintBottom_toBottomOf="parent"
+        add:layout_constraintHorizontal_bias="0.801"
+        add:layout_constraintLeft_toLeftOf="parent"
+        add:layout_constraintRight_toRightOf="parent"
+        add:layout_constraintTop_toTopOf="parent"
+        add:layout_constraintVertical_bias="0.869" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+<!--타이머 이동-->
+    <Button
+        android:id="@+id/main_timerButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/hourglass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <!--스톱워치 이동-->
+    <Button
+        android:id="@+id/main_stopwatchButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/timer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+        <!--가장 먼저 해야되는 일 텍스트 묶음 뷰-->
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="340dp"
+        android:layout_height="120dp"
+        android:text="마감임박 프로젝트"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:background="@drawable/main_impending_textview_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+    <!--마감일 가까운 프로젝트 타이틀-->
+    <TextView
+        android:id="@+id/main_deadlineProjectTitle"
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:hint="title"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <TextView
+        android:id="@+id/main_deadlineProjectDate"
+        android:layout_width="300dp"
+        android:layout_height="34dp"
+        android:hint="마감일"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.93" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recyclerView"
+        android:layout_width="340dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/main_impending_textview_background"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.137">
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mainLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0"
+        >
+
+        <!--홈 이동 버튼-->
+        <Button
+            android:layout_marginLeft="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/home_click"
+            />
+
+        <!--프로젝트 이동 버튼-->
+        <Button
+            android:id="@+id/main_toProjectButton"
+            android:layout_marginLeft="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/everyday"
+            />
+
+        <!--습관창 이동 버튼-->
+        <Button
+            android:id="@+id/main_toHabitButton"
+            android:layout_marginLeft="30dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/day_blank"
+            />
+
+        <!--좋은 글귀 이동 버튼-->
+        <Button
+            android:id="@+id/main_toGoodWritingButton"
+            android:layout_marginLeft="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/wording"
+            />
+
+        <!--좋아요 누른 글귀 볼 수 있는 창-->
+        <Button
+            android:id="@+id/main_toLikeButton"
+            android:layout_marginLeft="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/heart"
+
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

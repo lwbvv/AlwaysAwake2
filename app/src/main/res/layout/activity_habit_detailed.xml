@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--뒤로가기 버튼 (습관창으로 이동)-->
+        <Button
+            android:id="@+id/habitDetailed_backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:background="@drawable/ic_chevron_left_black_24dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity=""
+            android:text="상세보기"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <!--습관 타이틀-->
+    <TextView
+        android:id="@+id/habitDetailed_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_impending_textview_background"
+        android:ems="10"
+        android:hint="습관이름"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="수행할 요일" />
+
+    <!--요일 체크박스-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <CheckBox
+            android:id="@+id/habitDetailed_monCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="월"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitDetailed_tueCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="화"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitDetailed_wedCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="수"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitDetailed_thuCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="목"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitDetailed_friCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="금"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitDetailed_satCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="토"
+            android:textColor="@color/basicTextColor" />
+        <CheckBox
+            android:id="@+id/habitDetailed_sunCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="일"
+            android:textColor="@color/basicTextColor" />
+    </LinearLayout>
+
+    <!--매일 체크-->
+    <Button
+        android:id="@+id/habitDetailed_everyDayCheckButton"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#EEEEEE"
+        android:text="매일"
+        android:textColor="#4B4B4B"
+        android:textSize="30dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="이 시간대에 미리 알림" />
+
+    <TextView
+        android:id="@+id/habitDetailed_preNoticeTime"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_impending_textview_background"
+        android:gravity="center"
+        android:text="X"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="지도 펼치기" />
+
+    <TextView
+        android:id="@+id/habitDetailed_location"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_impending_textview_background"
+        android:gravity="center"
+        android:text="위치없음"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="이 시간대에 체크박스 활성화" />
+
+    <TextView
+        android:id="@+id/habitDetailed_timerStart"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/main_impending_textview_background"
+        android:gravity="center"
+        android:text="X"
+        android:textSize="30dp" />
+
+</LinearLayout>
