@@ -25,6 +25,21 @@ _일을 효율적으로 할 수 있도록 계획을 세우고 습관을 들이�
 
 <br>
 
+## 프로젝트
+<p>
+<img src="https://user-images.githubusercontent.com/49789441/77501745-45030200-6e9c-11ea-86e8-0ace90496831.png"  width="200" height="340">
+<img src="https://user-images.githubusercontent.com/49789441/77501747-47655c00-6e9c-11ea-8736-2da6df6bf9f2.png"  width="200" height="340">
+<img src="https://user-images.githubusercontent.com/49789441/77501757-4af8e300-6e9c-11ea-9091-fb5761859d65.png"  width="200" height="340">
+</p>
+<p>
+<img src="https://user-images.githubusercontent.com/49789441/77501762-4df3d380-6e9c-11ea-9585-429c6bbb5773.png"  width="200" height="340">
+<img src="https://user-images.githubusercontent.com/49789441/77501768-50562d80-6e9c-11ea-9347-25b498b7aad6.png"  width="200" height="340">
+</p>
+
++ 프로젝트를 만들고 해당 프로젝트를 수행하기 위한 하부 계획들을 세워 일정을 잡을 수 있게 도와줍니다
+
+<br>
+
 ## 타이머
 
 <img src="https://user-images.githubusercontent.com/49789441/77501609-dcb42080-6e9b-11ea-9567-f25c1259b78e.gif"  width="200" height="340">
@@ -40,20 +55,6 @@ _일을 효율적으로 할 수 있도록 계획을 세우고 습관을 들이�
 
 <br>
 
-## 프로젝트
-<p>
-<img src="https://user-images.githubusercontent.com/49789441/77501745-45030200-6e9c-11ea-86e8-0ace90496831.png"  width="200" height="340">
-<img src="https://user-images.githubusercontent.com/49789441/77501747-47655c00-6e9c-11ea-8736-2da6df6bf9f2.png"  width="200" height="340">
-<img src="https://user-images.githubusercontent.com/49789441/77501757-4af8e300-6e9c-11ea-9091-fb5761859d65.png"  width="200" height="340">
-</p>
-<p>
-<img src="https://user-images.githubusercontent.com/49789441/77501762-4df3d380-6e9c-11ea-9585-429c6bbb5773.png"  width="200" height="340">
-<img src="https://user-images.githubusercontent.com/49789441/77501768-50562d80-6e9c-11ea-9347-25b498b7aad6.png"  width="200" height="340">
-</p>
-
-+ 프로젝트를 만들고 해당 프로젝트를 수행하기 위한 하부 계획들을 세워 일정을 잡을 수 있게 도와줍니다
-
-<br>
 
 ## 습관
 
